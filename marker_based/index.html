@@ -21,28 +21,27 @@
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
             <a-marker preset="hiro">
+
                 <a-entity id="box"
                           geometry="primitive: box; width: 0.5; depth: 0.5; height: 0.5;"
-                          position="0.8 0.8 0"
-                          material="color: #4CC3D9">
+                          position="1 0 0"
+                          material="color: #F2F3F4">
                 </a-entity>
-                <a-entity id="sphere"
-                          geometry="primitive: sphere; radius:0.6;"
-                          position="-1.2 0.4 0"
-                          material="color: #EF2D5E">
-                </a-entity>
-                <!--
-    <a-entity id="cylinder"
-            geometry="primitive: cylinder; radius: 0.4; height:1.2;"
-            position="0 0 0"
-            material="color: #FFC65D">
-    </a-entity>
-    -->
 
-                <a-cylinder position="0 -1 0" radius="0.5" height="1" color="#FFC65D"></a-cylinder>
+                <a-entity id="sphere"
+                          geometry="primitive: sphere; radius:0.4;"
+                          position="-1.2 0 0"
+                          material="color: #154360">
+                </a-entity>
+                
+                <a-cylinder position="0 0 0"
+                            radius="0.2"
+                            height="1"
+                            color="#F0B27A">
+                </a-cylinder>
 
                 <a-entity id="annyang" annyang-speech-recognition></a-entity>
-                <a-entity position="0 2.25 -15" particle-system="preset: snow" 
+                <a-entity position="0 2.25 -15" particle-system="preset: snow"
                           visible="false"
                           speech-command__start="command: start; type: attribute; attribute: visible; value: true;"
                           speech-command__stop="command: stop; type: attribute; attribute: visible; value: false;">
