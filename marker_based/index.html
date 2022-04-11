@@ -19,6 +19,7 @@
 </head>
 
 
+    
 <body style="margin : 0px; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false;"
              renderer="logarithmicDepthBuffer: true;"
@@ -30,6 +31,7 @@
                 <img id="my-image" src="assets/carisio.jpg">
         </a-assets>
 
+        
         <a-marker preset="hiro">
 
             <a-entity id="box"
@@ -66,7 +68,7 @@
             <a-text value="Charisis Lalopoulos" rotation="-90 0 0" position="0 0.2 0.8" color="black" text="font: monoid; align: center;"></a-text>
 
 
-            <a-image src="#my-image" width="1" height="1" rotation="90 0 0" position="0 0.2 0"></a-image>
+            <a-image src="#my-image" width="1" height="1" rotation="90 0 180" position="0 0.2 0"></a-image>
             
 
         </a-marker>
