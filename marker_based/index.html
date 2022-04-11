@@ -1,62 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-    <!-- we import arjs version without NFT but with marker + location based support -->
-    <!--<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>-->
-    <script src="build/aframe-ar.js"></script>
-    
-    <!-- particles system component -->
-    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-    
-    <!-- speech command component -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
-    <script src="build/aframe-speech-command-component.js"></script>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<!-- we import arjs version without NFT but with marker + location based support -->
+<!--<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>-->
+<script src="build/aframe-ar.js"></script>
+
+<!-- particles system component -->
+<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+<!-- speech command component -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
+<script src="build/aframe-speech-command-component.js"></script>
 
 
 
-    <head>
-        <title>Marker_Based</title>
-    </head> 
-    
-
-    <body style="margin : 0px; overflow: hidden;">
-        <a-scene
-            vr-mode-ui="enabled: false;"
-            renderer="logarithmicDepthBuffer: true;"
-            embedded
-            arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+<head>
+    <title>Marker_Based</title>
+</head>
 
 
-            <a-marker preset="hiro">
-
-                <a-entity id="box"
-                          geometry="primitive: box; width: 0.5; depth: 0.5; height: 0.5;"
-                          position="1 0 0"
-                          material="color: #F2F3F4">
-                </a-entity>
-
-                <a-entity id="sphere"
-                          geometry="primitive: sphere; radius:0.4;"
-                          position="-1.2 0 0"
-                          material="color: #154360">
-                </a-entity>
-                
-                <a-cylinder position="0 0 0"
-                            radius="0.2"
-                            height="1"
-                            color="#F0B27A">
-                </a-cylinder>
-
-                <a-entity id="annyang" annyang-speech-recognition></a-entity>
-                <a-entity position="0 2 -15" particle-system="preset: snow; particleCount: 10000"                       
-                          visible="false"
-                          speech-command__start="command: start; type: attribute; attribute: visible; value: true;"
-                          speech-command__stop="command: stop; type: attribute; attribute: visible; value: false;">
-                </a-entity>
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene vr-mode-ui="enabled: false;"
+             renderer="logarithmicDepthBuffer: true;"
+             embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
 
 
-            </a-marker>
+
+
+
+        <a-marker preset="hiro">
+
+            <a-entity id="box"
+                      geometry="primitive: box; width: 0.5; depth: 0.5; height: 0.5;"
+                      position="1 0 0"
+                      material="color: #F2F3F4">
+            </a-entity>
+
+            <a-entity id="sphere"
+                      geometry="primitive: sphere; radius:0.4;"
+                      position="-1.2 0 0"
+                      material="color: #154360">
+            </a-entity>
+
+            <a-cylinder position="0 0 0"
+                        radius="0.2"
+                        height="1"
+                        color="#F0B27A">
+            </a-cylinder>
+
+            <a-entity id="annyang" annyang-speech-recognition></a-entity>
+            <a-entity position="0 2 -15" particle-system="preset: snow; particleCount: 10000"
+                      visible="false"
+                      speech-command__start="command: start; type: attribute; attribute: visible; value: true;"
+                      speech-command__stop="command: stop; type: attribute; attribute: visible; value: false;">
+            </a-entity>
+            
+        </a-marker>
+
+
+        <a-marker preset='custom' type='pattern' url='assets/dpsd.patt'>
+
+            <!--position="x z y"-->
+            <a-text value="Charisis Lalopoulos" rotation="-90 0 0" position="0 0.2 0.8" color="black" text="font: monoid; align: center;"></a-text>
+
+
+
+            <!--<a-image src="assets/carisio.jpg" rotation="90 180 0"></a-image>
+
+    <a-image src="#my-image" width="1" height="1" rotation="90 0 0" position="0 0.2 0"></a-image>     -->
+
+        </a-marker>
+
+
         <a-entity camera></a-entity>
-        </a-scene>
-    </body>
+    </a-scene>
+</body>
 </html>
+
+
+<!--
+
+     <a-assets>
+                <img id="my-image" src="assets/carisio.jpg">
+            </a-assets>
+
+-->
