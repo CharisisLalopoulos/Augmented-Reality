@@ -32,6 +32,8 @@
             <img id="hydrogen" src="assets/card-H.png">
             <img id="oxygen" src="assets/card-O.png">
         </a-assets>
+        
+        <a-asset-item id="text-obj" src="assets/text.obj"></a-asset-item>
 
 
         <a-marker preset="hiro">
@@ -66,9 +68,10 @@
 
         <a-marker preset='custom' type='pattern' url='assets/DPSD19064.patt'>
 
-            <!--position="x z y"-->
-            <a-text value="Charisis Lalopoulos" rotation="-90 0 0" position="0 0.2 0.8" color="black" text="font: monoid; align: center;"></a-text>
-
+            <!--position="x z y"
+            <a-text value="Charisis Lalopoulos" rotation="-90 0 0" position="0 0.2 0.8" color="black" text="font: monoid; align: center;"></a-text>-->
+            
+            <a-obj-model src="#text-obj"></a-obj-model>
 
             <a-image src="#my-image" width="1" height="1" rotation="90 180 0" position="0 0.2 0"></a-image>
 
