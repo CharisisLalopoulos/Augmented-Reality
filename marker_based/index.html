@@ -11,19 +11,9 @@
 <!-- speech command component -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
 <script src="build/aframe-speech-command-component.js"></script>
-
-
-
-<script>
-  AFRAME.registerComponent('alpha-test', {
-    dependencies: ['material'],
-    init: function () {
-      this.el.getObject3D('mesh').material.alphaTest = 0.5;
-    }
-  });
-</script>
     
-    
+
+  
 <head>
     <title>Marker_Based</title>
 </head>
@@ -86,9 +76,10 @@
 
             <a-image src="#my-image" width="1" height="1" rotation="-90 0 0" position="0 0.2 0"></a-image>
             
-            <a-text value="Charisis Lalopoulos" rotation="-90 0 0" position="0 0.2 0.8" color="black" text="font: monoid; align: center;"></a-text>
-            <!--
+            <!--<a-text value="Charisis Lalopoulos" rotation="-90 0 0" position="0 0.2 0.8" color="black" text="font: monoid; align: center;"></a-text>
+            
             <a-obj-model src="#text-obj" mtl="#text-mtl" scale="0.01 0.01 0.01"></a-obj-model>-->
+            <a-entity gltf-model="assets/text.glb" position="0 0 0" scale=".09 .09 .09"></a-entity>
 
         </a-marker>
 
