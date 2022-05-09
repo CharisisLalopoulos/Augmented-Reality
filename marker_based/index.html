@@ -11,7 +11,9 @@
 <!-- speech command component -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
 <script src="build/aframe-speech-command-component.js"></script>
-    
+ 
+<!--   -->
+<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
   
 <head>
@@ -32,6 +34,7 @@
             <img id="hydrogen" src="assets/card-H.png">
             <img id="oxygen" src="assets/card-O.png">
             
+            <a-asset-item id="HydrogenA" src="/assets/HydrogenAni.glb"></a-asset-item>
             <!--
             <video id="HydrogenA" autoplay loop="true" src="assets/"></video>
             <video id="OxygenA" autoplay loop="true" src="assets/OxygenAnimation.mp4"></video>-->
@@ -84,14 +87,17 @@
             <a-image src="#hydrogen" width="1" height="1" rotation="-90 0 0" position="-1 0 0"></a-image>
             
             <!--<a-video src="#HydrogenA" width="1" height="1" position="0 0.5 0" rotation="90 0 180"></a-video>
-            <a-entity gltf-model="assets/HydrogenAni.glb" position="0 0.5 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity>-->       
-            
+            <a-entity gltf-model="assets/HydrogenAni.glb" position="0 0.5 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity>-->      
+            <!--
             <a-sphere radius="0.3" position="0 0 0" color="#FDEBD3"></a-sphere>
 
             <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 5000; easing:linear">
                 <a-sphere radius="0.05" position="0.5 0 0" color="#4F4F4F"></a-sphere>
             </a-entity>
-           
+           -->
+            
+            <a-entity gltf-model="#HydrogenA" animation-mixer></a-entity>
+            
         </a-marker>
 
 
