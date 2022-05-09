@@ -13,7 +13,6 @@
 <script src="build/aframe-speech-command-component.js"></script>
     
 
-
   
 <head>
     <title>Marker_Based</title>
@@ -34,8 +33,8 @@
             <img id="oxygen" src="assets/card-O.png">
             
             <!--
-            <video id="HydrogenA" autoplay loop="true" src="assets/"></video>-->
-            <video id="OxygenA" autoplay loop="true" src="assets/OxygenAnimation.mp4"></video>
+            <video id="HydrogenA" autoplay loop="true" src="assets/"></video>
+            <video id="OxygenA" autoplay loop="true" src="assets/OxygenAnimation.mp4"></video>-->
             <video id="WaterA" autoplay loop="true" src="assets/H2Oanimation.mp4"></video>
         </a-assets>
         
@@ -102,7 +101,19 @@
             
             <!--<a-video src="#OxygenA" width="1" height="1" position="0 0.5 0" rotation="-90 0 0"></a-video>-->
             
-            
+            <a-sphere radius="0.3" position="0 0 0" color="#5DCAFF"></a-sphere>
+
+            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 3500; easing:linear">
+                <a-sphere radius=".05" position="0.5 0 0" color="#4F4F4F"></a-sphere>
+                <a-sphere radius=".05" position="-0.5 0 0" color="#4F4F4F"></a-sphere>
+                <a-sphere radius=".05" position="0 0.5 0" color="#4F4F4F"></a-sphere>
+                <a-sphere radius=".05" position="0 -0.5 0" color="#4F4F4F"></a-sphere>
+                <a-sphere radius=".05" position="-0.35 -0.35 0" color="#4F4F4F"></a-sphere>
+                <a-sphere radius=".05" position="0.35 0.35 0" color="#4F4F4F"></a-sphere>
+                <a-sphere radius=".05" position="0.35 -0.35 0" color="#4F4F4F"></a-sphere>
+                <a-sphere radius=".05" position="-0.35 0.35 0" color="#4F4F4F"></a-sphere>
+
+            </a-entity>
 
         </a-marker>
 
