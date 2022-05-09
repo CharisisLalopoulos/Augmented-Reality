@@ -85,8 +85,14 @@
             
             <a-image src="#hydrogen" width="1" height="1" rotation="-90 0 0" position="0 0 0"></a-image>
             
-            <!--<a-video src="#HydrogenA" width="1" height="1" position="0 0.5 0" rotation="90 0 180"></a-video>-->
-            <a-entity gltf-model="assets/HydrogenAni.glb" position="0 0.5 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity>
+            <!--<a-video src="#HydrogenA" width="1" height="1" position="0 0.5 0" rotation="90 0 180"></a-video>
+            <a-entity gltf-model="assets/HydrogenAni.glb" position="0 0.5 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity>-->       
+            
+            <a-sphere radius="0.3" position="0 0 0" color="#FDEBD3"></a-sphere>
+
+            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 5000; easing:linear">
+                <a-sphere radius="0.05" position="0.5 0 0" color="#888786"></a-sphere>
+            </a-entity>
            
         </a-marker>
 
@@ -96,6 +102,8 @@
             <a-image src="#oxygen" width="1" height="1" rotation="-90 0 0" position="0 0.2 0"></a-image>
             
             <!--<a-video src="#OxygenA" width="1" height="1" position="0 0.5 0" rotation="-90 0 0"></a-video>-->
+            
+            
 
         </a-marker>
 
