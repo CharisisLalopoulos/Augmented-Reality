@@ -15,6 +15,49 @@
  
     <!-- gltf component -->
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    
+    <!-- Marker Distance component -->
+    <script>
+    AFRAME.registerComponent("marker-distance",
+        {
+            tick: function () {
+                this.markerDistance()
+            },
+            markerDistance: function () {
+                var hydrogenPos, oxygenPos
+                
+                this.box1 = document.querySelector('#box1')
+                this.box2 = document.querySelector('#box2')
+                this.box3 = document.querySelector('#box3')
+                this.hydrogen = document.querySelector("#hyd")
+                this.oxygen = document.querySelector("#oxy")
+
+                hydrogenPos = new THREE.Vector3();
+                hydrogen.object3D.getWorldPosition(hydrogenPos);
+
+                oxygenPos = new THREE.Vector3();
+                oxygen.object3D.getWorldPosition(oxygenPos);
+
+                //distance
+                this.d = hydrogenPos.distanceTo(oxygenPos);
+                console.log("distance" + this.d)
+            }
+        });
+
+
+    if ( markerDistance < 2 )
+    {
+        this.box1.setAttribute("visible", false)
+        this.box2.setAttribute("visible", false)
+        this.box3.setAttribute("visible", true)
+    } 
+    else 
+    {
+        this.box1.setAttribute("visible", true)
+        this.box2.setAttribute("visible", true)
+        this.box3.setAttribute("visible", false)
+    }
+    </script>
  
     <title>Marker_Based</title>
 </head>
@@ -88,6 +131,8 @@
             
             <a-image src="#hydrogen" width="1" height="1" rotation="-90 0 0" position="0 0 0"></a-image>
             
+            <a-box id="box1" width="0.5" depth="0.5" height="0.5" position="1 0 0" color="#4F4F4F"></a-box>
+            
             <!-- Animated entities - optional way no1 - -->
             <!--
             <a-sphere radius="0.3" position="0 0 0" color="#FDEBD3"></a-sphere>
@@ -101,8 +146,8 @@
             <a-video src="#HydrogenA" width="1" height="1" position="0 0.5 0" rotation="90 0 180"></a-video> -->
             
             <!-- Animated .glb in A-frame - optional way no3 - -->
-            
-            <a-entity gltf-model="assets/Hydro.glb" position="0 0.5 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity> 
+            <!--
+            <a-entity gltf-model="assets/Hydro.glb" position="0 0.5 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity> -->
             
             <!-- Animated .glb in A-frame +assets/ - optional way no4 - -->
             <!--
@@ -120,6 +165,8 @@
         <a-marker preset='custom' type='pattern' url='assets/Oxygen.patt'>
 
             <a-image src="#oxygen" width="1" height="1" rotation="-90 0 0" position="0 0 0"></a-image>
+            
+            <a-box id="box2" width="0.5" depth="0.5" height="0.5" position="1 0 0" color="#C3FF5D"></a-box>
             
             <!-- Animated entities - optional way no1 - -->
             <!-- 
@@ -141,12 +188,15 @@
             <!--<a-video src="#OxygenA" width="1" height="1" position="0 0.5 0" rotation="-90 0 0"></a-video>
 
             <!-- Animated .glb in A-frame - optional way no3 - -->
-            
-            <a-entity gltf-model="assets/Oxygen.glb" position="0 1 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity> 
+            <!--
+            <a-entity gltf-model="assets/Oxygen.glb" position="0 1 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity> -->
 
         </a-marker>
-
-
+        
+         <a-box id="box3" width="0.5" depth="0.5" height="0.5" position="1 0 0" color="#C3FF5D"></a-box>
+        
+        <a-entity marker-distance></a-entity>
+        
         <a-entity camera></a-entity>
     </a-scene>
 </body>
