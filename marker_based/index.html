@@ -72,19 +72,16 @@
             <img id="my-image" src="assets/carisio.jpg">
             <img id="hydrogen" src="assets/card-H.png">
             <img id="oxygen" src="assets/card-O.png">
-            
-            <!--
-            <a-asset-item id="hyd" src="assets/Hydro.glb"></a-asset-item> 
-            
-            <a-asset-item id="OxygenA" src="assets/OxygenAnimation.glb"></a-asset-item> -->
             <!--
             <video id="HydrogenA" autoplay loop="true" src="assets/"></video>
             <video id="OxygenA" autoplay loop="true" src="assets/OxygenAnimation.mp4"></video>
             <video id="WaterA" autoplay loop="true" src="assets/H2Oanimation.mp4"></video> -->
         </a-assets>
         
+        
 
-
+        <!-- Deliverable 1 -->
+        
         <a-marker preset="hiro">
 
             <a-entity id="box"
@@ -115,6 +112,8 @@
         </a-marker>
 
 
+        <!-- Deliverable 2 -->
+        
         <a-marker preset='custom' type='pattern' url='assets/DPSD19064.patt'>
 
             <a-image src="#my-image" width="1" height="1" rotation="-90 0 0" position="0 0.2 0"></a-image>
@@ -125,13 +124,10 @@
 
 
         <a-marker id="hyd" preset='custom' type='pattern' url='assets/Hydrogen.patt'>       
-            <!--
-            <a-image src="#hydrogen" width="1" height="1" rotation="-90 0 0" position="0 0 0"></a-image>  -->
             
-            <a-box id="box1" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#4F4F4F"></a-box>
+            <a-image src="#hydrogen" width="1" height="1" rotation="-90 0 0" position="0 0 0"></a-image>             
             
-            <!-- Animated entities - optional way no1 - -->
-            <!--
+            <!-- Animated entities - optional way no1 - -->      
             <a-sphere radius="0.3" position="0 0 0" color="#FDEBD3"></a-sphere>
 
             <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 5000; easing:linear">
@@ -154,19 +150,16 @@
             <!--
             <a-entity gltf-model="#hyd" position="0 0.5 0" scale="0.09 0.09 0.09" position="0 1 0" animation-mixer="clip: *; loop: repeat;"></a-entity> -->
             
-           
-         
+            <a-box id="box1" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#4F4F4F"></a-box>
+     
         </a-marker>
 
 
         <a-marker id="oxy" preset='custom' type='pattern' url='assets/Oxygen.patt'>
-<!--
-            <a-image src="#oxygen" width="1" height="1" rotation="-90 0 0" position="0 0 0"></a-image>  -->
-            
-            <a-box id="box2" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#C3FF5D"></a-box>
-            
+
+            <a-image src="#oxygen" width="1" height="1" rotation="-90 0 0" position="0 0 0"></a-image>  
+
             <!-- Animated entities - optional way no1 - -->
-            <!-- 
             <a-sphere radius="0.3" position="0 0 0" color="#5DCAFF"></a-sphere>
 
             <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 3500; easing:linear">
@@ -187,12 +180,14 @@
             <!-- Animated .glb in A-frame - optional way no3 - -->
             <!--
             <a-entity gltf-model="assets/Oxygen.glb" position="0 1 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity> -->
+            
+            <a-box id="box2" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#C3FF5D"></a-box>
 
         </a-marker>
         
-         <a-box id="box3" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#F0B27A"></a-box>
+        <a-box id="box3" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#F0B27A"></a-box>
         
-         <a-entity marker-distance></a-entity> 
+        <a-entity marker-distance></a-entity> 
         
         <a-entity camera></a-entity>
     </a-scene>
