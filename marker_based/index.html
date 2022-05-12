@@ -18,30 +18,29 @@
     
     <!-- Marker Distance component -->
     <script>
-    AFRAME.registerComponent("marker-distance", 
-                             
-                tick: function() {
-                this.box1 = document.querySelector('#box1')
-                this.box2 = document.querySelector('#box2')
-                this.box3 = document.querySelector('#box3')
-                this.hydrogen = document.querySelector("#hyd")
-                this.oxygen = document.querySelector("#oxy")
-                },
-                    
-                tick: function () {
-                var hydrogenPos, oxygenPos, markerDistance
+    AFRAME.registerComponent("marker-distance", {
+    tick: function () {
+        this.markerDistance()
+    },
+    markerDistance: function () {
+        var hydrogenPos, oxygenPos
+        
+        this.box1 = document.querySelector('#box1')
+        this.box2 = document.querySelector('#box2')
+        this.box3 = document.querySelector('#box3')
+        var hydrogen = document.querySelector("#hyd")
+        var oxygen = document.querySelector("#oxy")
 
-                hydrogenPos = new THREE.Vector3();
-                this.hydrogen.object3D.getWorldPosition(hydrogenPos);
+        hydrogenPos = new THREE.Vector3();
+        this.hydrogen.object3D.getWorldPosition(hydrogenPos);
 
-                oxygenPos = new THREE.Vector3();
-                this.oxygen.object3D.getWorldPosition(oxygenPos);
+        oxygenPos = new THREE.Vector3();
+        this.oxygen.object3D.getWorldPosition(oxygenPos);
 
-                //distance
-                markerDistance = hydrogenPos.distanceTo(oxygenPos);
-                
-                
-                if ( markerDistance < 2 )
+        //distance
+        markerDistance = hydrogenPos.distanceTo(oxygenPos);
+        
+        if ( markerDistance < 2 )
                 {     
                     this.box1.setAttribute("visible", false)
                     this.box2.setAttribute("visible", false)
@@ -53,8 +52,8 @@
                     this.box2.setAttribute("visible", true)
                     this.box3.setAttribute("visible", false)
                 }
-            }
-        );
+    }
+});
     </script>
  
     <title>Marker_Based</title>
@@ -193,7 +192,7 @@
         
          <a-box id="box3" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#F0B27A"></a-box>
         
-         <a-entity markerDistance></a-entity> 
+         <a-entity marker-distance></a-entity> 
         
         <a-entity camera></a-entity>
     </a-scene>
