@@ -125,13 +125,13 @@
 
         <a-marker id="hyd" preset='custom' type='pattern' url='assets/Hydrogen.patt'>       
             
-            <a-image src="#hydrogen" width="1" height="1" rotation="-90 0 0" position="0 0 0"></a-image>             
+            <a-image src="#hydrogen" width="1" height="1" rotation="-90 0 0" position="0 -1 0"></a-image>             
             
             <!-- Animated entities - optional way no1 - -->      
-            <a-sphere radius="0.3" position="0 1 0" color="#FDEBD3"></a-sphere>
+            <a-sphere radius="0.3" position="0 0 0" color="#FDEBD3"></a-sphere>
 
-            <a-entity rotation="0 1 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 5000; easing:linear">
-                <a-sphere radius="0.05" position="0.5 1 0" color="#4F4F4F"></a-sphere> 
+            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 5000; easing:linear">
+                <a-sphere radius="0.05" position="0.5 0 0" color="#4F4F4F"></a-sphere> 
             </a-entity> -->
             
             <!-- Animation in Blender - optional way no2 - -->
@@ -159,7 +159,7 @@
 
         <a-marker id="oxy" preset='custom' type='pattern' url='assets/Oxygen.patt'>
 
-            <a-image src="#oxygen" width="1" height="1" rotation="-90 0 0" position="0 0 0"></a-image>  
+            <a-image src="#oxygen" width="1" height="1" rotation="-90 0 0" position="0 -1 0"></a-image>  
 
             <!-- Animated entities - optional way no1 - -->
             <a-sphere radius="0.3" position="0 0 0" color="#5DCAFF"></a-sphere>
