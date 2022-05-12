@@ -20,9 +20,25 @@
 
 Για το δεύτερο ζητούμενο, δημιούργησα τα animation για το Hydrogen, το Oxygen και το H2O στο **Blender** παίρνοντας ιδέες απο [αυτό](https://www.youtube.com/watch?v=qTcKajGJyes) και [αυτό](https://www.youtube.com/watch?v=fsdZdAvqpYk) το βίντεο στο YouTube αντίστοιχα.
 
-(Επίσης χρησιμοποίησα πληροφορίες απο [αυτό](https://www.youtube.com/watch?v=UH-zqJ2Jx64) το βίντεο στο YouTube, για να κάνω export τα animation με transparent background, όπως και [αυτή](https://www.mp4compress.com/) την σελίδα για να κάνω downsize τα *.mp4* αρχεία, ώστε να μπορούν να ανέβουν στο Github.)
+*Επίσης χρησιμοποίησα πληροφορίες απο [αυτό](https://www.youtube.com/watch?v=UH-zqJ2Jx64) το βίντεο στο YouTube και απο το [Video transparency with A-Frame and Three.js](https://stackoverflow.com/questions/59534193/video-transparency-with-a-frame-and-three-js) στο **stackoverflow** , για να κάνω export τα animation με transparent background, όπως και [αυτή](https://www.mp4compress.com/) την σελίδα για να κάνω downsize τα mp4 αρχεία, ώστε να μπορούν να ανέβουν στο Github. Για να εμφανίζονται στην οθόνη, συμβουλεύτηκα την [A-Frame_a-video](https://aframe.io/docs/1.3.0/primitives/a-video.html). Αυτός ο τρόπος δεν δούλεψε αφού τα animation εμφανίζονταν με ένα μάυρο background, με αποτέλεσμα να μην φαίνεται η εικόνα του κάθε στοιχείου.*
 
-Για να εμφανίζονται τα animation οταν η κάμερα αναγνωρίζει τα αντίστοιχα markers, χρησιμοποίησα κώδικα απο το [A-Frame_a-video](https://aframe.io/docs/1.3.0/primitives/a-video.html).  
+*Έπειτα δοκίμασα να κάνω export τα αρχεία του Blender σε **glb/gltf** και να τα κάνω animate χρησιμοποιόντας τις κατάλληλες εντολές, παίρνοντας ιδέες και βοήθεια απο :*
+- *[aframe-extras](https://github.com/n5ro/aframe-extras)*
+- *[aframe-extras](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation)*
+- *[A-frame-gltf-model](https://aframe.io/docs/1.3.0/components/gltf-model.html)*
+- *[Exporting GLB files from Blender](https://www.youtube.com/watch?v=EtlUF3NuaT0)*
+
+Ούτε αυτός ο τρόπος δούλεψε, οπότε σκέφτηκα αφού τα animation του Hydrogen και του Oxygen είναι κατα κάποιο τρόπο "απλά", θα μπορούσα να χρησιμοποιήσω entities που στην συνέχεια θα τις κάνω animate με τις κατάλληλες εντολές. Για αυτό, συμβουλεύτηκα το [Animating Objects (A-Frame Tutorial - WebVR)](https://www.youtube.com/watch?v=p3mNNZ356Ko&t=342s) στο Youtube. Για το animation του Η2Ο δεν μπορούσα να κάνω κάτι, οπότε το άφησα mp4 αρχείο.
+
+*Οι παραπάνω τρόποι που δεν δούλεψαν έχουν παραμείνει στον κώδικα με σχόλια, όπως και τα αρχικά animation σε μορφή mp4 στον φάκελο assets. *
+
+Για το τρίτο ζητούμενο, όπου ανάλογα την απόσταση των markers θα εμφανίζεται είτε το animation του νερού, είτε αυτά των Hydrogen και Oxygen, κοίταξα αυτές τις πηγές :
+- [How to get marker position (x,y) AR.js](https://stackoverflow.com/questions/61239107/how-to-get-marker-position-x-y-ar-js)
+- [A-frame show gltf model if variable has a certain value](https://stackoverflow.com/questions/67578125/a-frame-show-gltf-model-if-variable-has-a-certain-value)
+
+αλλά και τα σχόλια στο Deliverable 2, δεν κατάφερα όμως να το κάνω να δουλέψει..
+
+Έχω αφήσει παρόλα αυτά τις εντολές για το marker-distance στον κώδικα, εφόσον καταβλήθηκε και η προσπάθεια.
 
 # 3rd Deliverable 
 
