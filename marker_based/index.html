@@ -128,10 +128,10 @@
             <a-image src="#hydrogen" width="1" height="1" rotation="-90 0 0" position="0 0 0"></a-image>             
             
             <!-- Animated entities - optional way no1 - -->      
-            <a-sphere radius="0.3" position="0 0 0" color="#FDEBD3"></a-sphere>
+            <a-sphere radius="0.3" position="0 1 0" color="#FDEBD3"></a-sphere>
 
-            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 5000; easing:linear">
-                <a-sphere radius="0.05" position="0.5 0 0" color="#4F4F4F"></a-sphere> 
+            <a-entity rotation="0 1 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 5000; easing:linear">
+                <a-sphere radius="0.05" position="0.5 1 0" color="#4F4F4F"></a-sphere> 
             </a-entity> -->
             
             <!-- Animation in Blender - optional way no2 - -->
@@ -150,7 +150,9 @@
             <!--
             <a-entity gltf-model="#hyd" position="0 0.5 0" scale="0.09 0.09 0.09" position="0 1 0" animation-mixer="clip: *; loop: repeat;"></a-entity> -->
             
-            <a-box id="box1" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#4F4F4F"></a-box>
+            <!-- tester for marker-distance -->
+            <!--
+            <a-box id="box1" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#4F4F4F"></a-box> -->
      
         </a-marker>
 
@@ -181,11 +183,15 @@
             <!--
             <a-entity gltf-model="assets/Oxygen.glb" position="0 1 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity> -->
             
-            <a-box id="box2" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#C3FF5D"></a-box>
+            <!-- tester for marker-distance -->
+            <!--
+            <a-box id="box2" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#C3FF5D"></a-box> -->
 
         </a-marker>
         
-        <a-box id="box3" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#F0B27A"></a-box>
+        <!-- tester for marker-distance -->
+        <!--
+        <a-box id="box3" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#F0B27A"></a-box> -->
         
         <!-- <a-entity marker-distance></a-entity> -->
         
