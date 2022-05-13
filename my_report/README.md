@@ -35,6 +35,7 @@
 Για το τρίτο ζητούμενο, όπου ανάλογα την απόσταση των markers θα εμφανίζεται είτε το animation του νερού, είτε αυτά των Hydrogen και Oxygen, κοίταξα αυτές τις πηγές :
 - [How to get marker position (x,y) AR.js](https://stackoverflow.com/questions/61239107/how-to-get-marker-position-x-y-ar-js)
 - [A-frame show gltf model if variable has a certain value](https://stackoverflow.com/questions/67578125/a-frame-show-gltf-model-if-variable-has-a-certain-value)
+- [A-Frame-Component](https://aframe.io/docs/1.3.0/core/component.html#register-a-component)
 
 αλλά και τα σχόλια στο Deliverable 2, δεν κατάφερα όμως να το κάνω να δουλέψει..
 
