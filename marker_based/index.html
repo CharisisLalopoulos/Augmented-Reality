@@ -38,7 +38,7 @@
                  this.oxygen.object3D.getWorldPosition(oxygenPos);
 
                  //distance
-                 this.markerDistance = hydrogenPos.distanceTo(oxygenPos);
+                 markerDistance = hydrogenPos.distanceTo(oxygenPos);
                 
                 if ( markerDistance < 2 )
                 {     
@@ -193,14 +193,14 @@
             <a-entity gltf-model="assets/Oxygen.glb" position="0 1 0" scale="0.3 0.3 0.3" animation-mixer="clip: *; loop: repeat;"></a-entity> -->
             
             <!-- tester for marker-distance -->
-            
-            <a-box id="box2" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#C3FF5D"></a-box> 
+            <!--
+            <a-box id="box2" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#C3FF5D"></a-box> -->
 
         </a-marker>
         
         <!-- tester for marker-distance -->
         
-        <a-box id="box3" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#F0B27A"></a-box> 
+        <a-box id="box3" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#F0B27A" visible="false"></a-box> 
         
         <a-entity marker-distance></a-entity>
         
@@ -208,45 +208,3 @@
     </a-scene>
 </body>
 </html>
-
-
-
-<!--
-  AFRAME.registerComponent("marker-distance", {
-    tick: function () {
-        this.markerDistance()
-    },
-    markerDistance: function () {
-        var hydrogenPos, oxygenPos
-        
-        this.box1 = document.querySelector('#box1')
-        this.box2 = document.querySelector('#box2')
-        this.box3 = document.querySelector('#box3')
-        var hydrogen = document.querySelector("#hyd")
-        var oxygen = document.querySelector("#oxy")
-
-        hydrogenPos = new THREE.Vector3();
-        this.hydrogen.object3D.getWorldPosition(hydrogenPos);
-
-        oxygenPos = new THREE.Vector3();
-        this.oxygen.object3D.getWorldPosition(oxygenPos);
-
-        //distance
-        markerDistance = hydrogenPos.distanceTo(oxygenPos);
-        
-        if ( markerDistance < 2 )
-                {     
-                    this.box1.setAttribute("visible", false)
-                    this.box2.setAttribute("visible", false)
-                    this.box3.setAttribute("visible", true)
-                } 
-                else 
-                {
-                    this.box1.setAttribute("visible", true)
-                    this.box2.setAttribute("visible", true)
-                    this.box3.setAttribute("visible", false)
-                }
-    }
-});
-
--->
