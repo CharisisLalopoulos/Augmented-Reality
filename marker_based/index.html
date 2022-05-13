@@ -20,8 +20,10 @@
     <script>
         AFRAME.registerComponent("marker-distance", {
             init: function() {
-                this.box1 = document.querySelector('#box1')
-                this.box2 = document.querySelector('#box2')
+                this.h1 = document.querySelector('#h1')
+                this.h2 = document.querySelector('#h2')
+                this.o1 = document.querySelector('#o1')
+                this.o2 = document.querySelector('#o2')
                 this.box3 = document.querySelector('#box3')
                 this.hydrogen = document.querySelector("#hyd")
                 this.oxygen = document.querySelector("#oxy")
@@ -36,18 +38,22 @@
                  this.oxygen.object3D.getWorldPosition(oxygenPos);
 
                  //distance
-                 markerDistance = hydrogenPos.distanceTo(oxygenPos);
+                 this.markerDistance = hydrogenPos.distanceTo(oxygenPos);
                 
                 if ( markerDistance < 2 )
                 {     
-                    this.box1.setAttribute("visible", false)
-                    this.box2.setAttribute("visible", false)
+                    this.h1.setAttribute("visible", false)
+                    this.h2.setAttribute("visible", false)
+                    this.o1.setAttribute("visible", false)
+                    this.o2.setAttribute("visible", false)
                     this.box3.setAttribute("visible", true)
                 } 
                 else 
                 {
-                    this.box1.setAttribute("visible", true)
-                    this.box2.setAttribute("visible", true)
+                    this.h1.setAttribute("visible", true)
+                    this.h2.setAttribute("visible", true)
+                    this.o1.setAttribute("visible", true)
+                    this.o2.setAttribute("visible", true)
                     this.box3.setAttribute("visible", false)
                 }
             }
@@ -130,12 +136,12 @@
             
             <a-image src="#hydrogen" width="1" height="1" rotation="-90 0 0" position="0 -1 0"></a-image>             
             
-            <!-- Animated entities - optional way no1      
-            <a-sphere radius="0.3" position="0 0 0" color="#FDEBD3"></a-sphere>
+            <!-- Animated entities - optional way no1 -->     
+            <a-sphere id="h1" radius="0.3" position="0 0 0" color="#FDEBD3"></a-sphere>
 
-            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 5000; easing:linear">
+            <a-entity id="h2" rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 5000; easing:linear">
                 <a-sphere radius="0.05" position="0.5 0 0" color="#4F4F4F"></a-sphere> 
-            </a-entity>  --> 
+            </a-entity>   
             
             <!-- Animation in Blender - optional way no2 - -->
             <!--
@@ -154,8 +160,8 @@
             <a-entity gltf-model="#hyd" position="0 0.5 0" scale="0.09 0.09 0.09" position="0 1 0" animation-mixer="clip: *; loop: repeat;"></a-entity> -->
             
             <!-- tester for marker-distance -->
-            
-            <a-box id="box1" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#4F4F4F"></a-box> 
+            <!--
+            <a-box id="box1" width="0.5" depth="0.5" height="0.5" position="0 0 0" color="#4F4F4F"></a-box>  --> 
      
         </a-marker>
 
@@ -164,10 +170,10 @@
 
             <a-image src="#oxygen" width="1" height="1" rotation="-90 0 0" position="0 -1 0"></a-image>  
 
-            <!-- Animated entities - optional way no1 
-            <a-sphere radius="0.3" position="0 0 0" color="#5DCAFF"></a-sphere>
+            <!-- Animated entities - optional way no1 -->
+            <a-sphere id="o1" radius="0.3" position="0 0 0" color="#5DCAFF"></a-sphere>
 
-            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 3500; easing:linear">
+            <a-entity id="o2" rotation="0 0 0" animation="property: rotation; to: 0 0 -360; loop: true; dur: 3500; easing:linear">
                 <a-sphere radius=".05" position="0.5 0 0" color="#4F4F4F"></a-sphere>
                 <a-sphere radius=".05" position="-0.5 0 0" color="#4F4F4F"></a-sphere>
                 <a-sphere radius=".05" position="0 0.5 0" color="#4F4F4F"></a-sphere>
@@ -176,7 +182,7 @@
                 <a-sphere radius=".05" position="0.35 0.35 0" color="#4F4F4F"></a-sphere>
                 <a-sphere radius=".05" position="0.35 -0.35 0" color="#4F4F4F"></a-sphere>
                 <a-sphere radius=".05" position="-0.35 0.35 0" color="#4F4F4F"></a-sphere>
-            </a-entity>   -->
+            </a-entity>   
             
             <!-- Animation in Blender - optional way no2 - -->
             <!--
