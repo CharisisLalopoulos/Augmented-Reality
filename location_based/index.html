@@ -43,13 +43,14 @@
 		    <a-asset-item id="par" src="./assets/magnemite/scene.gltf"></a-asset-item>
             </a-assets>
 	    
+	    
 	    <a-entity 
             	class="click"
             	gltf-model="#par"            	
             	scale= "0.5 0.5 0.5" 
             	position="0 0 0" 
             	animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 25000"
-            	gps-entity-place="latitude:  37.97021; longitude: 23.72223;"
+            	gps-entity-place="latitude: 37.9703; longitude: 23.7225;"
             	show-text>
 
             	<a-text 
@@ -62,16 +63,10 @@
             	</a-text>
             </a-entity>
 
-	    <!--
-	    <a-entity gltf-model="#par"
-		      scale="0.5 0.5 0.5" 
-		      gps-entity-place="latitude: 37.970250; longitude: 23.72264;">
-	    </a-entity> -->
-	  
 	    
             <a-camera
              	rotation-reader
-            	gps-camera="simulateLatitude: 37.97025; simulateLongitude: 23.72247; minDistance: 1; maxDistance: 700;">
+            	gps-camera="simulateLatitude: 37.9714; simulateLongitude: 23.7237; minDistance: 1; maxDistance: 700;">
 	    </a-camera>
 	</a-scene>
 </body>
