@@ -53,6 +53,8 @@
 
 Για να εμφανίζονται τα αντικείμενα ανάλογα με το location της κάμερας πήρα ιδέες απο [αυτή](https://ar-js-org.github.io/AR.js-Docs/location-based/) την σελίδα και στην συνέχεια απο [αυτό](https://medium.com/chialab-open-source/build-your-location-based-augmented-reality-web-app-c2442e716564) το άρθρο, όπως και απο την [A-Frame-camera](https://aframe.io/docs/0.9.0/components/camera.html#reading-position-or-rotation-of-the-camera)
 
+Αν και πιστεύω πως ο κώδικάς μου είναι σωστός, δεν έχω καταφέρει να εμφανίσω στο location based τον Παρθενώνα, αντ΄αυτού μου εμφανίζει μία μπλέ οθόνη.
+
 # Conclusions
 
 
