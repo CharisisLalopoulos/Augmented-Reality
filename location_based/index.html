@@ -44,16 +44,16 @@
 		    <a-asset-item id="par" src="./assets/parthenon/scene.gltf"></a-asset-item>
             </a-assets>
 	    
-	    <!-- animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 25000"
+	    <!-- 
 animation="property: rotation; to: 0 -360 0; easing: linear; loop: true; dur: 25000"
 -->
 	    <a-entity 
             	class="click"
             	gltf-model="#par"            	
-            	scale= "0.5 0.5 0.5" 
-            	position="0 0 0" 
-            	
+            	scale= ".09 .09 .09" 
+            	position="0 0 0"            	
             	gps-entity-place="latitude: 37.9703; longitude: 23.7225;"
+		animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 25000"
             	show-text>
 
             	<a-text 
@@ -64,7 +64,7 @@ animation="property: rotation; to: 0 -360 0; easing: linear; loop: true; dur: 25
                 	text="align: center"
                 	>
             	</a-text>
-            </a-entity> -->
+            </a-entity> 
 
 	    
             <a-camera
