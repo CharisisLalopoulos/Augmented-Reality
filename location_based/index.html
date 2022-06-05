@@ -39,28 +39,30 @@
             </a-entity>
 	    
 	    <a-entity gps-entity-place="latitude: 44.4908615; longitude: 11.3326416;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/>
-	    <!--
+	    
 	    <a-assets>
-		    <a-asset-item id="par" src="./assets/magnemite/scene.gltf"></a-asset-item>
+		    <a-asset-item id="par" src="./assets/parthenon/scene.gltf"></a-asset-item>
             </a-assets>
 	    
-	    
+	    <!-- animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 25000"
+animation="property: rotation; to: 0 -360 0; easing: linear; loop: true; dur: 25000"
+-->
 	    <a-entity 
             	class="click"
             	gltf-model="#par"            	
             	scale= "0.5 0.5 0.5" 
             	position="0 0 0" 
-            	animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 25000"
+            	
             	gps-entity-place="latitude: 37.9703; longitude: 23.7225;"
             	show-text>
 
             	<a-text 
                 	class ="clickable"
                 	visible="false"
-                	value="The Parthenon is a former temple on the Athenian Acropolis, Greece, dedicated to the goddess Athena, whom the people of Athens considered their patroness." 
-                	position="0 1.5 0"
+                	value="Parthenon" 
+                	position="0 -1 0"
                 	text="align: center"
-                	animation="property: rotation; to: 0 -360 0; easing: linear; loop: true; dur: 25000">
+                	>
             	</a-text>
             </a-entity> -->
 
