@@ -47,13 +47,14 @@
 # 3rd Deliverable 
 Για το 3ο deliverable πήρα τα 3d μοντέλα απο το [Sketchfab](https://sketchfab.com/feed) και πιο συγκεκριμένα :
 - [Parthenon](https://sketchfab.com/3d-models/parthenon-8390c61a76cb48c989ddf975a0a06c8d) ![](Report_images/par.png)
-- [Church](https://sketchfab.com/3d-models/small-low-poly-church-4d7eff1991454c1480d8fb9faa0534d6) ![](Report_images/chu.png)
+- [lowpoly Καθολικός Ναός του Αγίου Γεωργίου](https://sketchfab.com/3d-models/small-low-poly-church-4d7eff1991454c1480d8fb9faa0534d6) ![](Report_images/chu.png)
 
 Στη συνέχεια χρησιμοποίησα κώδικα απο το [Glitch](https://glitch.com/~salty-partner-1) για να κάνω το 3d αντικείμενο μου clickable, έτσι ώστε όταν πατιέται να εμφανίζει ένα μικρό text.
 
 Για να εμφανίζονται τα αντικείμενα ανάλογα με το location της κάμερας πήρα ιδέες απο [αυτή](https://ar-js-org.github.io/AR.js-Docs/location-based/) την σελίδα και στην συνέχεια απο [αυτό](https://medium.com/chialab-open-source/build-your-location-based-augmented-reality-web-app-c2442e716564) το άρθρο, όπως και απο την [A-Frame-camera](https://aframe.io/docs/0.9.0/components/camera.html#reading-position-or-rotation-of-the-camera)
 
-Αν και πιστεύω πως ο κώδικάς μου είναι σωστός, δεν έχω καταφέρει να εμφανίσω στο location based τον Παρθενώνα, αντ΄αυτού μου εμφανίζει μία μπλέ οθόνη.
+Αν και πιστεύω πως ο κώδικάς μου είναι σωστός, δεν έχω καταφέρει να εμφανίσω στο Location Based τον Παρθενώνα, αντ΄αυτού μου εμφανίζει μία μπλέ οθόνη.
+Ακόμη στο Syros Location Based αν και κάνω αλλαγές στην κλίμακα του αντικειμένου (lowpoly Καθολικός Ναός του Αγίου Γεωργίου), για κάποιο λόγο δεν εμφανίζονται οι αλλαγές αυτές, όταν ανοίγω την σελίδα.
 
 # Conclusions
 
