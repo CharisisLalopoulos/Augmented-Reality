@@ -60,18 +60,35 @@
 
 
 # Sources
-- [HTML color codes](https://htmlcolorcodes.com/)
-- [A-Frame](https://aframe.io/)
-- [How TO - Animate Buttons](https://www.w3schools.com/howto/howto_css_animate_buttons.asp)
-- [How do I make an html link look like a button?](https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button)
-- [HTML Button Type](https://www.freecodecamp.org/news/html-button-type-how-to-add-buttons-to-your-website/)
-- [A-Frame-a-obj-model](https://aframe.io/docs/1.3.0/primitives/a-obj-model.html)
-- [A-Frame-camera](https://aframe.io/docs/0.9.0/components/camera.html#reading-position-or-rotation-of-the-camera)
-- [How to Handle Multiple Distinct Markers](https://aframe.io/blog/arjs/#how-to-handle-multiple-distinct-markers)
-- [Image Tracking and Location-Based AR with A-Frame and AR.js 3](https://aframe.io/blog/arjs3/)
-- [How to get marker position (x,y) AR.js](https://stackoverflow.com/questions/61239107/how-to-get-marker-position-x-y-ar-js)
-- [Writing a Component](https://aframe.io/docs/0.8.0/introduction/writing-a-component.html)
-- [A-frame show gltf model if variable has a certain value](https://stackoverflow.com/questions/67578125/a-frame-show-gltf-model-if-variable-has-a-certain-value)
+- **General**
+  - [HTML color codes](https://htmlcolorcodes.com/)
+  - [How TO - Animate Buttons](https://www.w3schools.com/howto/howto_css_animate_buttons.asp)
+  - [HTML Button Type](https://www.freecodecamp.org/news/html-button-type-how-to-add-buttons-to-your-website/)
+- **A-Frame**
+  - [A-Frame](https://aframe.io/)
+  - [A-Frame-a-obj-model](https://aframe.io/docs/1.3.0/primitives/a-obj-model.html)
+  - [A-Frame-camera](https://aframe.io/docs/0.9.0/components/camera.html#reading-position-or-rotation-of-the-camera)
+  - [How to Handle Multiple Distinct Markers](https://aframe.io/blog/arjs/#how-to-handle-multiple-distinct-markers)
+  - [Image Tracking and Location-Based AR with A-Frame and AR.js 3](https://aframe.io/blog/arjs3/)
+  - [Writing a Component](https://aframe.io/docs/0.8.0/introduction/writing-a-component.html)
+- **StackOverflow**
+  - [How do I make an html link look like a button?](https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button)
+  - [How to get marker position (x,y) AR.js](https://stackoverflow.com/questions/61239107/how-to-get-marker-position-x-y-ar-js)
+  - [A-frame show gltf model if variable has a certain value](https://stackoverflow.com/questions/67578125/a-frame-show-gltf-model-if-variable-has-a-certain-value)
+- **Github**
+- **Youtube**
+
+
+
+
+
+
+
+
+
+
+
+
 - [Register a Component](https://aframe.io/docs/1.3.0/core/component.html#register-a-component)
 - [Exporting GLB files from Blender for MyARStudio](https://www.youtube.com/watch?v=EtlUF3NuaT0)
 - [A-Frame-extras](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation)
