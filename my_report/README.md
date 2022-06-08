@@ -64,6 +64,9 @@
   - [HTML color codes](https://htmlcolorcodes.com/)
   - [How TO - Animate Buttons](https://www.w3schools.com/howto/howto_css_animate_buttons.asp)
   - [HTML Button Type](https://www.freecodecamp.org/news/html-button-type-how-to-add-buttons-to-your-website/)
+  - [Compress MP4 Video Files](https://www.mp4compress.com/)
+  - [aframe-text-fonts-demo](https://glitch.com/~aframe-text-fonts-demo)
+  - [AR.js Marker Training](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
 - **A-Frame**
   - [A-Frame](https://aframe.io/)
   - [A-Frame-a-obj-model](https://aframe.io/docs/1.3.0/primitives/a-obj-model.html)
@@ -71,43 +74,28 @@
   - [How to Handle Multiple Distinct Markers](https://aframe.io/blog/arjs/#how-to-handle-multiple-distinct-markers)
   - [Image Tracking and Location-Based AR with A-Frame and AR.js 3](https://aframe.io/blog/arjs3/)
   - [Writing a Component](https://aframe.io/docs/0.8.0/introduction/writing-a-component.html)
+  - [Register a Component](https://aframe.io/docs/1.3.0/core/component.html#register-a-component)
+  - [A-Frame-gltf-model](https://aframe.io/docs/1.3.0/components/gltf-model.html)
+  - [A-Frame-a-video](https://aframe.io/docs/1.3.0/primitives/a-video.html)
+  - [A-Frame-Animation](https://aframe.io/docs/1.3.0/components/animation.html)
+  - [A-Frame-a-image](https://aframe.io/docs/1.3.0/primitives/a-image.html#example)
+  - [A-Frame-a-text](https://aframe.io/docs/1.3.0/primitives/a-text.html#example)
+  - [A-Frame-text](https://aframe.io/docs/1.3.0/components/text.html#fonts2_dejavu)
 - **StackOverflow**
   - [How do I make an html link look like a button?](https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button)
   - [How to get marker position (x,y) AR.js](https://stackoverflow.com/questions/61239107/how-to-get-marker-position-x-y-ar-js)
   - [A-frame show gltf model if variable has a certain value](https://stackoverflow.com/questions/67578125/a-frame-show-gltf-model-if-variable-has-a-certain-value)
+  - [Video transparency with A-Frame and Three.js](https://stackoverflow.com/questions/59534193/video-transparency-with-a-frame-and-three-js)
+  - [I cannot add an image in aframe](https://stackoverflow.com/questions/65818826/i-cannot-add-an-image-in-aframe)
 - **Github**
+  - [A-Frame-extras](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation)
+  - [A-Frame-extras-2](https://github.com/n5ro/aframe-extras)
+  - [Unable to scan custom markers #172](https://github.com/jeromeetienne/AR.js/issues/172)
+  - [Custom pattern is not being recognized #164](https://github.com/jeromeetienne/AR.js/issues/164)
+  - [Hiro working great but custom markers not working #216](https://github.com/jeromeetienne/AR.js/issues/216)
 - **Youtube**
-
-
-
-
-
-
-
-
-
-
-
-
-- [Register a Component](https://aframe.io/docs/1.3.0/core/component.html#register-a-component)
-- [Exporting GLB files from Blender for MyARStudio](https://www.youtube.com/watch?v=EtlUF3NuaT0)
-- [A-Frame-extras](https://github.com/n5ro/aframe-extras/tree/master/src/loaders#animation)
-- [A-Frame-extras-2](https://github.com/n5ro/aframe-extras)
-- [gltf-model](https://aframe.io/docs/1.3.0/components/gltf-model.html)
-- [Video transparency with A-Frame and Three.js](https://stackoverflow.com/questions/59534193/video-transparency-with-a-frame-and-three-js)
-- [A-Frame-a-video](https://aframe.io/docs/1.3.0/primitives/a-video.html)
-- [A-Frame-Animation](https://aframe.io/docs/1.3.0/components/animation.html)
-- [Blender - Easy Fluid Simulation 2021](https://www.youtube.com/watch?v=fsdZdAvqpYk)
-- [Εξαγωγή κινούμενων σχεδίων στο μπλέντερ - ο σωστός τρόπος! (Blender Beginner Tutorial)](https://www.youtube.com/watch?v=UH-zqJ2Jx64)
-- [Create An Atomic Structure In Blender | Electron + Proton + Nucleus | Blender 2.9x | Eevee & Cycles](https://www.youtube.com/watch?v=qTcKajGJyes)
-- [Compress MP4 Video Files](https://www.mp4compress.com/)
-- [A-Frame-a-image](https://aframe.io/docs/1.3.0/primitives/a-image.html#example)
-- [I cannot add an image in aframe](https://stackoverflow.com/questions/65818826/i-cannot-add-an-image-in-aframe)
-- [A-Frame-a-text](https://aframe.io/docs/1.3.0/primitives/a-text.html#example)
-- [A-Frame-text](https://aframe.io/docs/1.3.0/components/text.html#fonts2_dejavu)
-- [aframe-text-fonts-demo](https://glitch.com/~aframe-text-fonts-demo)
-- [Unable to scan custom markers #172](https://github.com/jeromeetienne/AR.js/issues/172)
-- [Custom pattern is not being recognized #164](https://github.com/jeromeetienne/AR.js/issues/164)
-- [AR.js Marker Training](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
-- [Hiro working great but custom markers not working #216](https://github.com/jeromeetienne/AR.js/issues/216)
+  - [Exporting GLB files from Blender for MyARStudio](https://www.youtube.com/watch?v=EtlUF3NuaT0)
+  - [Blender - Easy Fluid Simulation 2021](https://www.youtube.com/watch?v=fsdZdAvqpYk)
+  - [Εξαγωγή κινούμενων σχεδίων στο μπλέντερ - ο σωστός τρόπος! (Blender Beginner Tutorial)](https://www.youtube.com/watch?v=UH-zqJ2Jx64)
+  - [Create An Atomic Structure In Blender | Electron + Proton + Nucleus | Blender 2.9x | Eevee & Cycles](https://www.youtube.com/watch?v=qTcKajGJyes)
 
