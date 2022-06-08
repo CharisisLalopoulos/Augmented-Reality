@@ -67,6 +67,9 @@
   - [Compress MP4 Video Files](https://www.mp4compress.com/)
   - [aframe-text-fonts-demo](https://glitch.com/~aframe-text-fonts-demo)
   - [AR.js Marker Training](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
+  - [Clickable Object](https://glitch.com/~salty-partner-1)
+  - [Parthenon](https://sketchfab.com/3d-models/parthenon-8390c61a76cb48c989ddf975a0a06c8d)
+  - [Small low poly Church](https://sketchfab.com/3d-models/small-low-poly-church-4d7eff1991454c1480d8fb9faa0534d6)
 - **A-Frame**
   - [A-Frame](https://aframe.io/)
   - [A-Frame-a-obj-model](https://aframe.io/docs/1.3.0/primitives/a-obj-model.html)
