@@ -89,11 +89,8 @@
 - [A-Frame-a-text](https://aframe.io/docs/1.3.0/primitives/a-text.html#example)
 - [A-Frame-text](https://aframe.io/docs/1.3.0/components/text.html#fonts2_dejavu)
 - [aframe-text-fonts-demo](https://glitch.com/~aframe-text-fonts-demo)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- 
+- [Unable to scan custom markers #172](https://github.com/jeromeetienne/AR.js/issues/172)
+- [Custom pattern is not being recognized #164](https://github.com/jeromeetienne/AR.js/issues/164)
+- [AR.js Marker Training](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
+- [Hiro working great but custom markers not working #216](https://github.com/jeromeetienne/AR.js/issues/216)
+
