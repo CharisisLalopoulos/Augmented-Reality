@@ -6,7 +6,7 @@
 ### Augmented Reality Personal Repository: https://charisislalopoulos.github.io/Augmented-Reality/
 
 # Introduction
-
+Ονομάζομαι **Χαρίσης Λαλόπουλος**, είμαι φοιτητής στο 3ο έτος του **Τμήματος Μηχανικών Σχεδίασης Προϊόντων και Συστημάτων** και παρακάτω θα βρείτε το *report* για την εργασία μου, με θέμα ένα online app εικονικής πραγματικότητας, στα πλαίσια του μαθήματος Interaction Design του 6ου εξαμήνου. 
 # Summary
 
 
